@@ -6,6 +6,7 @@ import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
 import android.provider.OpenableColumns;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -21,11 +22,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.bumptech.glide.Glide;
 import com.google.android.material.textfield.TextInputEditText;
-import com.oblig1.MainActivity;
-import com.oblig1.R;
-import com.oblig1.exceptions.DataValidationException;
-import com.oblig1.handler.Handler;
-import com.oblig1.repository.Repository;
+
+import no.hvl.dat153.quizaapp2.R;
+import no.hvl.dat153.quizaapp2.exceptions.DataValidationException;
+import no.hvl.dat153.quizaapp2.repository.Repository;
+import no.hvl.dat153.quizaapp2.views.MainActivity;
 
 public class AddPictureActivity extends AppCompatActivity {
 
@@ -53,7 +54,7 @@ public class AddPictureActivity extends AppCompatActivity {
     fromDeviceImageView = (ImageView) findViewById(R.id.fromDeviceImageView);
     saveFromDeviceButton = (Button) findViewById(R.id.saveFromDeviceButton);
     repository = Repository.getInstance(this);
-    handler = new Handler(getApplicationContext());
+    handler = new Handler((Handler.Callback) getApplicationContext());
 
     nameInputText.setOnFocusChangeListener(new View.OnFocusChangeListener() {
       @Override

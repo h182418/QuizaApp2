@@ -18,9 +18,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.bumptech.glide.Glide;
 import com.google.android.material.textfield.TextInputEditText;
-import com.oblig1.MainActivity;
-
-
 
 import no.hvl.dat153.quizaapp2.R;
 import no.hvl.dat153.quizaapp2.entities.Picture;

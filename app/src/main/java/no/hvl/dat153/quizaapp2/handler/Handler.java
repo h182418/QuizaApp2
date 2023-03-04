@@ -2,9 +2,9 @@ package no.hvl.dat153.quizaapp2.handler;
 
 import android.content.Context;
 
-import com.oblig1.entities.Picture;
-import com.oblig1.exceptions.DataValidationException;
-import com.oblig1.repository.Repository;
+import no.hvl.dat153.quizaapp2.entities.Picture;
+import no.hvl.dat153.quizaapp2.exceptions.DataValidationException;
+import no.hvl.dat153.quizaapp2.repository.Repository;
 
 public class Handler {
 

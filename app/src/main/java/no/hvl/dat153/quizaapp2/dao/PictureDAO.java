@@ -5,9 +5,9 @@ import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Query;
 
-import com.oblig1.entities.Picture;
-
 import java.util.List;
+
+import no.hvl.dat153.quizaapp2.entities.Picture;
 
 @Dao
 public interface PictureDAO {

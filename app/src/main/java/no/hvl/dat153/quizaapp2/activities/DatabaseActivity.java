@@ -13,7 +13,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.oblig1.MainActivity;
 import com.oblig1.R;
-import com.oblig1.views.DatabaseRecyclerViewAdapter;
 
 import no.hvl.dat153.quizaapp2.views.DatabaseRecyclerViewAdapter;
 
