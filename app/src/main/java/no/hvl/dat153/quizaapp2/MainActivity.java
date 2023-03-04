@@ -18,7 +18,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
-import com.oblig1.activities.QuizActivity;
+import no.hvl.dat153.quizaapp2.activities.QuizActivity;
 
 import no.hvl.dat153.quizaapp2.R;
 import no.hvl.dat153.quizaapp2.activities.AddPictureActivity;

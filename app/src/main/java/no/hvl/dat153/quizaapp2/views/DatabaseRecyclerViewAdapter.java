@@ -15,11 +15,12 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.oblig1.R;
-import com.oblig1.entities.Picture;
-import com.oblig1.repository.Repository;
 
 import java.util.List;
+
+import no.hvl.dat153.quizaapp2.R;
+import no.hvl.dat153.quizaapp2.entities.Picture;
+import no.hvl.dat153.quizaapp2.repository.Repository;
 
 public class DatabaseRecyclerViewAdapter extends RecyclerView.Adapter<DatabaseRecyclerViewAdapter.ViewHolder> {
 

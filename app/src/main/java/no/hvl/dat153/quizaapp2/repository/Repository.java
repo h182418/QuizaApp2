@@ -60,7 +60,6 @@ public abstract class Repository extends RoomDatabase {
 
   private static void saveImage(String url, final String filename) {
     Glide.with(currentContext).asBitmap().load(url).into(new CustomTarget<Bitmap>() {
-      @Override
       public void onResourceReady(Bitmap bitmap, Transition<? super Bitmap> transition) {
         try {
           File myDir = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES).toString());
