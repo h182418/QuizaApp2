@@ -23,7 +23,6 @@ import no.hvl.dat153.quizaapp2.R;
 import no.hvl.dat153.quizaapp2.entities.Picture;
 import no.hvl.dat153.quizaapp2.models.Quiz;
 import no.hvl.dat153.quizaapp2.repository.Repository;
-import no.hvl.dat153.quizaapp2.views.MainActivity;
 
 public class QuizActivity extends AppCompatActivity {
 

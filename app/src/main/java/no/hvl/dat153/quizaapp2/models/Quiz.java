@@ -1,9 +1,9 @@
 package no.hvl.dat153.quizaapp2.models;
 
-import com.oblig1.entities.Picture;
-
 import java.util.List;
 import java.util.Random;
+
+import no.hvl.dat153.quizaapp2.entities.Picture;
 
 public class Quiz {
 

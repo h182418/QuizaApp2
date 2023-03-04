@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
 import android.os.Environment;
+import android.transition.Transition;
 
 import androidx.room.Database;
 import androidx.room.Room;
@@ -11,13 +12,13 @@ import androidx.room.RoomDatabase;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.target.CustomTarget;
-import com.bumptech.glide.request.transition.Transition;
-import com.oblig1.dao.PictureDAO;
-import com.oblig1.entities.Picture;
 
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+
+import no.hvl.dat153.quizaapp2.dao.PictureDAO;
+import no.hvl.dat153.quizaapp2.entities.Picture;
 
 @Database(entities = {Picture.class}, version = 4, exportSchema = false)
 public abstract class Repository extends RoomDatabase {

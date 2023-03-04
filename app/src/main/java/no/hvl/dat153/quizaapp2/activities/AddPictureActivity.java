@@ -26,7 +26,6 @@ import com.google.android.material.textfield.TextInputEditText;
 import no.hvl.dat153.quizaapp2.R;
 import no.hvl.dat153.quizaapp2.exceptions.DataValidationException;
 import no.hvl.dat153.quizaapp2.repository.Repository;
-import no.hvl.dat153.quizaapp2.views.MainActivity;
 
 public class AddPictureActivity extends AppCompatActivity {
 
