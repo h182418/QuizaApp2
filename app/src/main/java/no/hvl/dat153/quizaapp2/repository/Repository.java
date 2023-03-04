@@ -6,6 +6,8 @@ import android.graphics.drawable.Drawable;
 import android.os.Environment;
 import android.transition.Transition;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
@@ -60,7 +62,7 @@ public abstract class Repository extends RoomDatabase {
 
   private static void saveImage(String url, final String filename) {
     Glide.with(currentContext).asBitmap().load(url).into(new CustomTarget<Bitmap>() {
-      public void onResourceReady(Bitmap bitmap, Transition<? super Bitmap> transition) {
+      public void onResourceReady(Bitmap bitmap, Transition transition) {
         try {
           File myDir = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES).toString());
           if (!myDir.exists()) {
@@ -76,6 +78,11 @@ public abstract class Repository extends RoomDatabase {
         } catch (IOException e) {
           e.printStackTrace();
         }
+      }
+
+      @Override
+      public void onResourceReady(@NonNull Bitmap resource, @Nullable com.bumptech.glide.request.transition.Transition<? super Bitmap> transition) {
+
       }
 
       @Override
