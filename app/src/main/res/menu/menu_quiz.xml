@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    >
+    <item
+        android:id="@+id/restartQuizMenuItem"
+        android:title="Restart"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/homeQuizMenuItem"
+        android:title="Home"
+        app:showAsAction="always" />
+</menu>
