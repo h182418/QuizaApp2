@@ -11,10 +11,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.oblig1.MainActivity;
-import com.oblig1.R;
-
+import no.hvl.dat153.quizaapp2.R;
 import no.hvl.dat153.quizaapp2.views.DatabaseRecyclerViewAdapter;
+import no.hvl.dat153.quizaapp2.views.MainActivity;
 
 public class DatabaseActivity extends AppCompatActivity {
 
@@ -45,7 +44,7 @@ public class DatabaseActivity extends AppCompatActivity {
     if(item.getItemId()==R.id.homeDatabaseMenuItem) {
       startActivity(new Intent(this, MainActivity.class));
       return true;
-    } else if(item.getItemId()==R.id.addDatabaseMenuItem) {
+    } else if(item.getItemId()== R.id.addDatabaseMenuItem) {
       startActivity(new Intent(this, AddPictureActivity.class));
       return true;
     } else {

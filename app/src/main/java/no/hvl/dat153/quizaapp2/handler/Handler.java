@@ -5,7 +5,6 @@ import android.content.Context;
 import no.hvl.dat153.quizaapp2.entities.Picture;
 import no.hvl.dat153.quizaapp2.exceptions.DataValidationException;
 import no.hvl.dat153.quizaapp2.repository.Repository;
-
 public class Handler {
 
   private Repository repository;
