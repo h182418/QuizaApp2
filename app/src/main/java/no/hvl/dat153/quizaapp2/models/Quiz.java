@@ -44,7 +44,7 @@ public class Quiz {
       return false;
     }
   }
-
+/*
   public int getCountCorrectAnswers() {
     return countCorrectAnswers;
   }
@@ -52,7 +52,7 @@ public class Quiz {
   public int getCountWrongAnswers() {
     return countWrongAnswers;
   }
-
+*/
   public void incrementAttempts() {
     attempts++;
   }

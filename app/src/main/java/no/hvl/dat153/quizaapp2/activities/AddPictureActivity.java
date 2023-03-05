@@ -15,7 +15,6 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -24,9 +23,7 @@ import com.bumptech.glide.Glide;
 import com.google.android.material.textfield.TextInputEditText;
 
 import no.hvl.dat153.quizaapp2.R;
-import no.hvl.dat153.quizaapp2.exceptions.DataValidationException;
 import no.hvl.dat153.quizaapp2.repository.Repository;
-import no.hvl.dat153.quizaapp2.views.MainActivity;
 
 public class AddPictureActivity extends AppCompatActivity {
 
@@ -74,12 +71,12 @@ public class AddPictureActivity extends AppCompatActivity {
         startActivityForResult(intent, REQUEST_IMAGE_OPEN);
       }
     });
-
+    /*
     saveFromDeviceButton.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
         try {
-          handler.savePicture(nameInputText.getText().toString(), filename);
+         handler.savePicture(nameInputText.getText().toString(), filename);
           Intent intent = new Intent(AddPictureActivity.this, DatabaseActivity.class);
           startActivity(intent);
         } catch (DataValidationException e) {
@@ -87,6 +84,7 @@ public class AddPictureActivity extends AppCompatActivity {
         }
       }
     });
+   */
   }
 
   @Override

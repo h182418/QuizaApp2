@@ -13,7 +13,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import no.hvl.dat153.quizaapp2.R;
 import no.hvl.dat153.quizaapp2.views.DatabaseRecyclerViewAdapter;
-import no.hvl.dat153.quizaapp2.views.MainActivity;
 
 public class DatabaseActivity extends AppCompatActivity {
 

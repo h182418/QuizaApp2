@@ -1,4 +1,4 @@
-package no.hvl.dat153.quizaapp2.views;
+package no.hvl.dat153.quizaapp2.activities;
 
 import static android.Manifest.permission.INTERNET;
 import static android.Manifest.permission.READ_EXTERNAL_STORAGE;
@@ -18,11 +18,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
-import no.hvl.dat153.quizaapp2.activities.QuizActivity;
-
 import no.hvl.dat153.quizaapp2.R;
-import no.hvl.dat153.quizaapp2.activities.AddPictureActivity;
-import no.hvl.dat153.quizaapp2.activities.DatabaseActivity;
 import no.hvl.dat153.quizaapp2.repository.Repository;
 
 public class MainActivity extends AppCompatActivity {
@@ -43,9 +39,9 @@ public class MainActivity extends AppCompatActivity {
         };
     }
     private void initializeView() {
-        quizButton = (Button) findViewById(R.id.quizButton);
-        databaseButton = (Button) findViewById(R.id.databaseButton);
-        addButton = (Button) findViewById(R.id.addButton);
+        quizButton = findViewById(R.id.quizButton);
+        databaseButton = findViewById(R.id.databaseButton);
+        addButton = findViewById(R.id.addButton);
 
         databaseButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -122,7 +118,6 @@ public class MainActivity extends AppCompatActivity {
             default:
                 break;
         }
-    }
 
     private void showMessageOKCancel(String message, DialogInterface.OnClickListener okListener) {
         new AlertDialog.Builder(MainActivity.this)
@@ -132,4 +127,4 @@ public class MainActivity extends AppCompatActivity {
                 .create()
                 .show();
     }
-}
+};

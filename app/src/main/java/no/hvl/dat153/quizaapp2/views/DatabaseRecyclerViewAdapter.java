@@ -1,5 +1,6 @@
 package no.hvl.dat153.quizaapp2.views;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Environment;
 import android.view.LayoutInflater;
@@ -45,7 +46,7 @@ public class DatabaseRecyclerViewAdapter extends RecyclerView.Adapter<DatabaseRe
   }
 
   @Override
-  public void onBindViewHolder(@NonNull ViewHolder holder, final int position) {
+  public void onBindViewHolder(@NonNull ViewHolder holder, @SuppressLint("RecyclerView") final int position) {
     holder.pictureNameText.setText(pictures.get(position).getName());
 
     Glide.with(mContext)

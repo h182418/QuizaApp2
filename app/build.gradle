@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace 'no.hvl.dat153.quizaapp2'
-    compileSdk 30
+    compileSdk 33
 
     defaultConfig {
         applicationId "no.hvl.dat153.quizaapp2"
@@ -45,7 +45,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
     annotationProcessor 'androidx.room:room-compiler:2.5.0'
 
-    implementation 'com.github.bumptech.glide:glide:4.14.2'
+    implementation 'com.github.bumptech.glide:glide:4.15.0'
 
-    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.15.0'
 }
