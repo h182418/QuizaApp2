@@ -34,14 +34,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         this.initializeView();
-        if(!this.checkPermission()) {
+        if (!this.checkPermission()) {
             this.requestPermission();
-        };
+        }
+        ;
     }
+
     private void initializeView() {
-        quizButton = findViewById(R.id.quizButton);
+        quizButton = findViewById(R.id.Quizbutton);
         databaseButton = findViewById(R.id.databaseButton);
-        addButton = findViewById(R.id.addButton);
+        addButton = findViewById(R.id.Addbutton);
 
         databaseButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -62,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
         quizButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(Repository.getInstance(getApplicationContext()).pictureDAO().getAllPictures().isEmpty()) {
+                if (Repository.getInstance(getApplicationContext()).pictureDAO().getAllPictures().isEmpty()) {
                     Toast.makeText(getApplicationContext(), "Add an item to the database to start quiz", Toast.LENGTH_SHORT).show();
                 } else {
                     Intent intent = new Intent(MainActivity.this, QuizActivity.class);
@@ -119,12 +121,14 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
 
-    private void showMessageOKCancel(String message, DialogInterface.OnClickListener okListener) {
-        new AlertDialog.Builder(MainActivity.this)
-                .setMessage(message)
-                .setPositiveButton("OK", okListener)
-                .setNegativeButton("Cancel", null)
-                .create()
-                .show();
+        private void showMessageOKCancel (String message, DialogInterface.OnClickListener okListener)
+        {
+            new AlertDialog.Builder(MainActivity.this)
+                    .setMessage(message)
+                    .setPositiveButton("OK", okListener)
+                    .setNegativeButton("Cancel", null)
+                    .create()
+                    .show();
+        }
     }
 };
