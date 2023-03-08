@@ -97,8 +97,8 @@ public class MainActivity extends AppCompatActivity {
                         Toast.makeText(this, "Permission granted. You can now use the app.", Toast.LENGTH_SHORT);
                     } else {
                         Toast.makeText(this, "Permission denied. The app won't work.", Toast.LENGTH_SHORT);
-                   }
-                    /*
+                    }
+                /*
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                         if (shouldShowRequestPermissionRationale(READ_EXTERNAL_STORAGE)) {
                             this.showMessageOKCancel("You need to allow access to all of the permissions",
@@ -128,9 +128,11 @@ public class MainActivity extends AppCompatActivity {
                     .create()
                     .show();
         }
-   }*/
+   }
 }
+*/
 
+                }
         }
     }
 };
