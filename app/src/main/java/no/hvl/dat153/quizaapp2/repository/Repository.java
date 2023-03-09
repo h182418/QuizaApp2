@@ -49,11 +49,11 @@ public abstract class Repository extends RoomDatabase {
 
     // Pictures that we can use in app from startup
    saveImage("https://no.wikipedia.org/wiki/Erik_ten_Hag#/media/Fil:Erik_ten_Hag_2017.jpg", "tenhag");
-    instance.pictureDAO().insertPicture(new Picture("Matt Damon", "damon"));
+    instance.pictureDAO().insertPicture(new Picture("Erik ten Hag", "tenhag"));
     saveImage("https://en.wikipedia.org/wiki/J%C3%BCrgen_Klopp#/media/File:J%C3%BCrgen_Klopp,_Liverpool_vs._Chelsea,_UEFA_Super_Cup_2019-08-14_04.jpg", "klopp");
-    instance.pictureDAO().insertPicture(new Picture("Bradley Cooper", "cooper"));
+    instance.pictureDAO().insertPicture(new Picture("Jurgen Klopp", "klopp"));
     saveImage("https://no.wikipedia.org/wiki/Mikel_Arteta#/media/Fil:Mikel_Arteta_2021.png","arteta");
-    instance.pictureDAO().insertPicture(new Picture("Kevin Smith", "smith"));
+    instance.pictureDAO().insertPicture(new Picture("Mikel Arteta", "arteta"));
 
     // Pictures we can add to app
     saveImage("https://en.wikipedia.org/wiki/Lars_Ulrich#/media/File:Lars_Ulrich_(26060414430).jpg", "ulrich");
