@@ -48,16 +48,16 @@ public abstract class Repository extends RoomDatabase {
   private static void initializePictures() {
 
     // Pictures that we can use in app from startup
-    saveImage("https://upload.wikimedia.org/wikipedia/commons/8/82/Damon_cropped.jpg", "damon");
+   saveImage("https://no.wikipedia.org/wiki/Erik_ten_Hag#/media/Fil:Erik_ten_Hag_2017.jpg", "tenhag");
     instance.pictureDAO().insertPicture(new Picture("Matt Damon", "damon"));
-    saveImage("https://upload.wikimedia.org/wikipedia/commons/b/bd/Glasto17-44_%2835547413626%29_Cropped.jpg", "cooper");
+    saveImage("https://en.wikipedia.org/wiki/J%C3%BCrgen_Klopp#/media/File:J%C3%BCrgen_Klopp,_Liverpool_vs._Chelsea,_UEFA_Super_Cup_2019-08-14_04.jpg", "klopp");
     instance.pictureDAO().insertPicture(new Picture("Bradley Cooper", "cooper"));
-    saveImage("https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Kevin_Smith_%2848477230947%29_%28cropped%29.jpg/1024px-Kevin_Smith_%2848477230947%29_%28cropped%29.jpg","smith");
+    saveImage("https://no.wikipedia.org/wiki/Mikel_Arteta#/media/Fil:Mikel_Arteta_2021.png","arteta");
     instance.pictureDAO().insertPicture(new Picture("Kevin Smith", "smith"));
 
     // Pictures we can add to app
-    saveImage("https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Tom_Hanks_TIFF_2019.jpg/1024px-Tom_Hanks_TIFF_2019.jpg", "hanks");
-    saveImage("https://upload.wikimedia.org/wikipedia/commons/8/8d/George_Clooney_2016.jpg", "clooney");
+    saveImage("https://en.wikipedia.org/wiki/Lars_Ulrich#/media/File:Lars_Ulrich_(26060414430).jpg", "ulrich");
+    saveImage("https://en.wikipedia.org/wiki/James_Hetfield#/media/File:James_Hetfield_2017.jpg", "hetfield");
   }
 
   private static void saveImage(String url, final String filename) {
