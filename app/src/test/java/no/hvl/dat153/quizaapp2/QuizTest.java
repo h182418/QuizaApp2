@@ -10,8 +10,8 @@ import java.util.List;
 
 import no.hvl.dat153.quizaapp2.entities.Picture;
 import no.hvl.dat153.quizaapp2.models.Quiz;
-import no.hvl.dat153.quizaapp2.repository.Repository;
-import no.hvl.dat153.quizaapp2.activities.QuizActivity;
+
+
 
 public class QuizTest {
 

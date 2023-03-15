@@ -24,7 +24,6 @@ import androidx.test.espresso.contrib.RecyclerViewActions;
 import androidx.test.espresso.intent.Intents;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 import androidx.test.rule.ActivityTestRule;
-import androidx.test.rule.GrantPermissionRule;
 
 import org.hamcrest.Matcher;
 import org.junit.After;
@@ -46,10 +45,10 @@ public class DatabaseActivityTest {
 
   @Rule
   public ActivityTestRule<AddPictureActivity> addActivityRule = new ActivityTestRule<>(AddPictureActivity.class);
-
+/*
   @Rule
   public GrantPermissionRule permissionRule = GrantPermissionRule.grant(Manifest.permission.READ_EXTERNAL_STORAGE);
-
+*/
 
   private int getItemCount() {
     Activity activity = activityRule.getActivity();
